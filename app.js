@@ -3,7 +3,11 @@ require("./xyz.js");
 
 //calculatedSum = require("./sum.js"); //single obj
 //const obj = require("./sum.js"); // multi object
-const { x, calculateSum } = require("./sum.js"); // shorthand notation
+// const { x, calculateSum } = require("./calculate/sum.js"); // shorthand notation
+// const { calculateMultiply } = require("./calculate/multiply.js");
+
+// Getting in same file
+const { calculateSum, calculateMultiply } = require("./calculate");
 
 name = "saravanakumar";
 
@@ -24,6 +28,9 @@ var b = 100;
 // obj.calculateSum(a, b);
 // console.log(obj.x);
 
-// Short hand notation
+// shorthand notation sum with package style
 calculateSum(a, b);
 console.log(x);
+
+// shorthand notation multiply with package style
+calculateMultiply(a, b);
