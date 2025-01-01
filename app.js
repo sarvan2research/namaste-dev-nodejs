@@ -9,6 +9,11 @@ require("./xyz.js");
 // Getting in same file
 const { calculateSum, calculateMultiply } = require("./calculate");
 
+// Loading json file to js object
+const dataJson = require("./data.json");
+// Node have created utils
+const nodeUtil = require("node:util");
+
 name = "saravanakumar";
 
 var a = 10;
@@ -30,7 +35,9 @@ var b = 100;
 
 // shorthand notation sum with package style
 calculateSum(a, b);
-console.log(x);
+//console.log(x);
 
 // shorthand notation multiply with package style
 calculateMultiply(a, b);
+
+console.log(dataJson);
