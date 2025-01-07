@@ -16,7 +16,7 @@ setTimeout(() => {
   console.log("Its async call handled by libuv");
 }, 5000);
 
-fileReader.readFile("./file1.txt", "utf-8", (error, raw) => {
+fileReader.readFile("./file1.txt", "utf8", (error, raw) => {
   if (error) {
     console.error("Error reading file:", error);
   } else {
